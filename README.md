@@ -23,16 +23,18 @@ In the third assignment of the Big Data course, the objective is to create a sim
 
 The assignment tasks can be summarized as follows:
 
-Write a DAG (Directed Acyclic Graph) code:
-Create a DAG in Apache Airflow to define the workflow of the ML model pipeline.
-The DAG should consist of the following tasks:
-Task 1 (T1): Download all CSV files from the specified S3 bucket and store them locally.
-Task 2 (T2): Read the downloaded CSV files, train the ML model, and save the trained model locally.
-Task 3 (T3): Download the prediction.csv file from S3 and save it locally.
-Task 4 (T4): Load the locally stored ML model, read the downloaded prediction CSV, and save a new CSV file with predictions for each input.
+- Write a DAG (Directed Acyclic Graph) code:
+- Create a DAG in Apache Airflow to define the workflow of the ML model pipeline.
+- The DAG should consist of the following tasks:
+  - Task 1 (T1): Download all CSV files from the specified S3 bucket and store them locally.
+  - Task 2 (T2): Read the downloaded CSV files, train the ML model, and save the trained model locally.
+  - Task 3 (T3): Download the prediction.csv file from S3 and save it locally.
+  - Task 4 (T4): Load the locally stored ML model, read the downloaded prediction CSV, and save a new CSV file with predictions for each input.
+
 Define the DAG schedule:
-Set the DAG schedule to run at 8 PM every Monday.
-Utilize Airflow variables:
-Use Airflow variables to define the S3 path for data storage and retrieval.
-Use another Airflow variable to specify the local path for storing the downloaded files and other outputs.
+  - Set the DAG schedule to run at 8 PM every Monday.
+  - Utilize Airflow variables:
+      - Use Airflow variables to define the S3 path for data storage and retrieval.
+      - Use another Airflow variable to specify the local path for storing the downloaded files and other outputs.
+
 The assignment aims to provide hands-on experience in creating an ML model pipeline in a production environment using Apache Airflow. By completing this assignment, students will gain proficiency in building and scheduling data processing tasks, performing ML model training and inference, and integrating various data sources and storage systems.
